@@ -1,0 +1,145 @@
+{
+  "width": 1080,
+  "height": 1920,
+  "objects": [
+    {
+      "type": "rect",
+      "left": 0,
+      "top": 0,
+      "width": 1080,
+      "height": 1920,
+      "fill": "#BBDEFB",
+      "stroke": "#C0C0C0",
+      "strokeWidth": 20,
+      "rx": 40,
+      "ry": 40,
+      "originX": "left",
+      "originY": "top"
+    },
+    {
+      "type": "triangle",
+      "left": 540,
+      "top": 240,
+      "originX": "center",
+      "originY": "center",
+      "width": 900,
+      "height": 250,
+      "fill": "#E3F2FD",
+      "angle": 180
+    },
+    {
+      "type": "text",
+      "text": "Oh Boy!",
+      "left": 540,
+      "top": 200,
+      "originX": "center",
+      "originY": "center",
+      "fontFamily": "Georgia",
+      "fontSize": 80,
+      "fill": "#0D47A1",
+      "fontWeight": "bold",
+      "shadow": { "color": "rgba(0,0,0,0.2)", "offsetX": 3, "offsetY": 3, "blur": 5 }
+    },
+    {
+      "type": "circle",
+      "left": 200,
+      "top": 500,
+      "originX": "center",
+      "originY": "center",
+      "radius": 120,
+      "fill": "#81D4FA",
+      "stroke": "#0288D1",
+      "strokeWidth": 8
+    },
+    {
+      "type": "circle",
+      "left": 880,
+      "top": 500,
+      "originX": "center",
+      "originY": "center",
+      "radius": 120,
+      "fill": "#81D4FA",
+      "stroke": "#0288D1",
+      "strokeWidth": 8
+    },
+    {
+      "type": "i-text",
+      "text": "Jack’s 1st Birthday!",
+      "left": 540,
+      "top": 820,
+      "originX": "center",
+      "originY": "center",
+      "fontFamily": "Arial",
+      "fontSize": 72,
+      "fill": "#1565C0",
+      "textAlign": "center"
+    },
+    {
+      "type": "rect",
+      "left": 100,
+      "top": 1040,
+      "originX": "left",
+      "originY": "top",
+      "width": 880,
+      "height": 380,
+      "fill": "rgba(255,255,255,0.8)",
+      "rx": 30,
+      "ry": 30
+    },
+    {
+      "type": "text",
+      "text": "Date: July 10, 2025",
+      "left": 540,
+      "top": 1120,
+      "originX": "center",
+      "originY": "center",
+      "fontSize": 42,
+      "fill": "#0D47A1",
+      "textAlign": "center"
+    },
+    {
+      "type": "text",
+      "text": "Time: 3:30 PM",
+      "left": 540,
+      "top": 1180,
+      "originX": "center",
+      "originY": "center",
+      "fontSize": 42,
+      "fill": "#0D47A1",
+      "textAlign": "center"
+    },
+    {
+      "type": "text",
+      "text": "Venue: Blue Sky Park",
+      "left": 540,
+      "top": 1240,
+      "originX": "center",
+      "originY": "center",
+      "fontSize": 42,
+      "fill": "#0D47A1",
+      "textAlign": "center"
+    },
+    {
+      "type": "path",
+      "path": "M -300 0 C -260 -50 -160 -50 -120 0 S 40 100 80 0",
+      "left": 540,
+      "top": 1450,
+      "originX": "center",
+      "originY": "center",
+      "stroke": "#1565C0",
+      "strokeWidth": 6,
+      "fill": ""
+    },
+    {
+      "type": "text",
+      "text": "RSVP by July 1st",
+      "left": 540,
+      "top": 1650,
+      "originX": "center",
+      "originY": "center",
+      "fontSize": 36,
+      "fill": "#0288D1",
+      "textAlign": "center"
+    }
+  ]
+}

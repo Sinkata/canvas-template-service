@@ -1,0 +1,29 @@
+{
+  "metadata": {
+    "_id": "60f5c2b8e1d3f8a5d6c9e7b4",
+    "name": "Promotional Flyer 2",
+    "category": "promo",
+    "local": "en",
+    "description": "A bright spring sale flyer template",
+    "createdAt": "2025-05-15T12:00:00.000Z",
+    "updatedAt": "2025-05-15T12:00:00.000Z",
+    "fileUrl": "/uploads/1823456789-flyer.json"
+  },
+  "content": {
+    "width": 1080,
+    "height": 1920,
+    "objects": [
+      {
+        "type": "text",
+        "text": "RSVP by July 1st",
+        "left": 540,
+        "top": 1650,
+        "originX": "center",
+        "originY": "center",
+        "fontSize": 36,
+        "fill": "#0288D1",
+        "textAlign": "center"
+      }
+    ]
+  }
+}

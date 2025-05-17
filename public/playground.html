@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/5.2.4/fabric.min.js"></script>
+  <style>
+    /* Make html/body and container fill the viewport */
+    html, body { margin: 0; padding: 0; width: 100% !important; height: 100%; }
+    #canvas-container { width: 100% !important; height: 100% !important; overflow: hidden; }
+    /* Canvas element to fill its parent container */
+    #c { width: 100% !important; height: 100% !important; display: block; }
+  </style>
+</head>
+<body>
+  <canvas id="c" width="1100" height="1920"></canvas>
+<!-- index.html -->
+<canvas id="c"></canvas>
+<!-- index.html -->
+<!-- index.html -->
+
+<div  id="canvas-container">
+  <canvas id="c"></canvas>
+</div>
+<script>
+  const baseWidth  = 1080;
+  const baseHeight = 1920;
+
+  // Initialize Fabric canvas without preset width/height
+  const canvas = new fabric.Canvas('c', {
+    selection: true,
+    preserveObjectStacking: true
+  });
+
+  // Load JSON and then set up responsiveness
+  fetch('testcanvas.json')
+    .then(res => res.json())
+    .then(json => {
+      canvas.loadFromJSON(json, () => {
+        canvas.getObjects().forEach(obj => obj.setCoords());
+        fitCanvasToContainer();
+      });
+    })
+    .catch(console.error);
+
+  // Calculate scale and set viewportTransform
+  function fitCanvasToContainer() {
+    const container = document.getElementById('canvas-container');
+    const cw = container.clientWidth;
+    const ch = container.clientHeight;
+    const scale = Math.min(cw / baseWidth, ch / baseHeight) * 2;
+    // Set canvas element dimensions
+    canvas.setWidth(baseWidth * scale);
+    canvas.setHeight(baseHeight * scale);
+
+    // Apply viewport transform: [scaleX, skewX, skewY, scaleY, translateX, translateY]
+    canvas.setViewportTransform([scale, 0, 0, scale, 0, 0]);
+    canvas.renderAll();
+  }
+
+  // Re-fit on window resize
+  window.addEventListener('resize', fitCanvasToContainer);
+  window.addEventListener('orientationchange', fitCanvasToContainer);
+</script>
+</body>
+</html>

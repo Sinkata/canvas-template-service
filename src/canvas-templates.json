@@ -1,0 +1,70 @@
+[
+    {
+      "_id": "sample-template-1",
+      "name": "Baby Boy 1st Birthday",
+      "version": "5.2.4",
+      "width": 800,
+      "height": 600,
+      "background": "#e0f7fa",
+      "objects": [
+        {
+          "type": "i-text",
+          "text": "Happy 1st Birthday!",
+          "left": 250,
+          "top": 80,
+          "fontSize": 48,
+          "fontWeight": "bold",
+          "fill": "#0277bd",
+          "fontFamily": "Comic Sans MS",
+          "textAlign": "center"
+        },
+        {
+          "type": "i-text",
+          "text": "Baby Noah",
+          "left": 300,
+          "top": 160,
+          "fontSize": 42,
+          "fontWeight": "bold",
+          "fill": "#01579b",
+          "fontFamily": "Comic Sans MS",
+          "textAlign": "center"
+        },
+        {
+          "type": "i-text",
+          "text": "Join us for cake, games, and fun!",
+          "left": 200,
+          "top": 250,
+          "fontSize": 28,
+          "fill": "#004d40",
+          "fontFamily": "Arial"
+        },
+        {
+          "type": "i-text",
+          "text": "Date: June 8, 2025\nTime: 2:00 PM\nLocation: 123 Bluebird Lane",
+          "left": 200,
+          "top": 300,
+          "fontSize": 24,
+          "fill": "#004d40",
+          "fontFamily": "Arial"
+        },
+        {
+          "type": "circle",
+          "left": 620,
+          "top": 420,
+          "radius": 60,
+          "fill": "#81d4fa"
+        },
+        {
+          "type": "i-text",
+          "text": "1",
+          "left": 590,
+          "top": 460,
+          "fontSize": 60,
+          "fill": "#01579b",
+          "fontWeight": "bold",
+          "fontFamily": "Comic Sans MS"
+        }
+      ]
+    }
+  ]
+  

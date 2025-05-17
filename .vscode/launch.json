@@ -1,0 +1,15 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "name": "Debug Express",
+        "type": "node",
+        "request": "launch",
+        "program": "${workspaceFolder}/src/app.js",
+        "cwd": "${workspaceFolder}",
+        "console": "integratedTerminal",
+        "internalConsoleOptions": "neverOpen",
+        "env": { "NODE_ENV": "development" }
+      }
+    ]
+}
